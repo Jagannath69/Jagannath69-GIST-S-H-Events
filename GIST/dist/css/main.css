@@ -1,0 +1,584 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*font-family: 'poppins', sans-serif;*/
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(119deg, rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.4)), url("./photos/GIST_11.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.icon {
+  width: 65px;
+  padding: 0px;
+  border: 0;
+  align-items: center;
+  position: relative;
+  transform: translate(-15px, 5px);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 1;
+  justify-content: flex-start;
+  position: absolute;
+  padding: 60px;
+}
+
+.title .f_name {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 29px;
+  color: #f47236;
+}
+
+.title .l_name {
+  font-weight: bold;
+  font-size: 80%;
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 15px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.nav-links ul li::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background: #f47236;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.text_box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  text-align: center;
+}
+
+.text_box h1 {
+  font-size: 35px;
+}
+
+.text_box p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 17px;
+  padding: 12px 30px;
+  margin-top: 1%;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid #f47236;
+  background: #f47236;
+  transition: 1s;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+.events {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 23px;
+}
+
+.events h1 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.events .row {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 30%;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.events .row .event-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: translateX(-2rem);
+}
+
+.events .row .event-col p {
+  font-size: 90%;
+  padding-top: 5%;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+
+.event-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.contact {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("./photos/cheerful-college-students-with-books-backpacks_179970-391.webp");
+  background-position: center;
+  background-size: contain;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+}
+
+.contact h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+
+.co_ord {
+  display: inline-block;
+  transform: translateX(35rem);
+}
+
+.faculty_coordinators {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("./photos/kishoresh.png");
+  margin-left: 45%;
+}
+
+.prof_name {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer {
+  padding: 12px 22px;
+  margin: auto;
+  background-color: lightslategray;
+}
+
+#footer .title_name h3 {
+  font-weight: bold;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.title-name .h3 {
+  margin: 0;
+  font-size: 100px;
+  color: rgba(225, 225, 225, 0.01);
+  background-image: url("https://picsum.photos/id/974/700");
+  background-repeat: repeat;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  padding: 2%;
+}
+
+.icons-2 {
+  padding-left: 47%;
+  align-items: center;
+}
+
+.icons-2 i:hover {
+  color: #f47236;
+}
+
+.cpr {
+  padding-left: 70%;
+}
+
+.sub-header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(119deg, rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.1)), url("./photos/3-1024x576.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.l_name_c {
+  color: #fff;
+}
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  width: 100%;
+}
+
+.contact-us {
+  width: 80;
+  margin: auto;
+}
+
+.contact-col {
+  flex-basis: 95%;
+  margin-bottom: 30px;
+}
+
+.contact-col div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  margin-left: 0%;
+}
+
+.contact-col div i {
+  font-size: 28px;
+  color: #f47236;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.contact-col div p {
+  padding: 0;
+}
+
+.contact-col div h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea {
+  width: 80%;
+  padding: 15px;
+  margin-left: 10%;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.row {
+  margin-left: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button {
+  padding: 8px 35px;
+  border: none;
+  margin-left: 10%;
+}
+
+.button:hover {
+  background-color: #f47236;
+}
+
+.main {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.container {
+  padding: 5rem 3rem;
+  display: block;
+  width: 40%;
+  height: 50vh;
+  margin: 2rem 20rem;
+  background: #fff;
+  border: none;
+}
+
+.container .title {
+  position: absolute;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 0px 10px;
+  top: 25%;
+  border-bottom: 1px solid #9b59b6;
+}
+
+.container .form .user-details {
+  position: relative;
+  padding: 5px 10px;
+  width: 85vh;
+  height: 40vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  justify-content: space-between;
+}
+
+.container .form .user-details .input-box {
+  padding: 2px 5px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px 0 12px 0;
+  width: calc(50% - 20px);
+  padding-top: 3px;
+}
+
+.container .form .user-details .input-box input {
+  font-family: "Poppins", sans-serif;
+  height: 40px;
+  width: 100%;
+  font-weight: 600;
+  outline: none;
+  border: 1px solid #9b59b6;
+  padding-left: 3px;
+  border-bottom-width: 1px;
+}
+
+.user-details .input-box input:focus, .user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+.user-details .input-box #events-select {
+  font-family: "Poppins", sans-serif;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #9b59b6;
+  padding-left: 3px;
+  border-bottom-width: 1px;
+}
+
+.container .form .user-details .input-box input:hover, .user-details .input-box #events-select:hover {
+  border-bottom-width: 2px;
+}
+
+.next {
+  padding: 10px 20px;
+  margin: 2px 2px;
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  outline: none;
+  border: #9b59b6;
+  font-size: 16px;
+  transition: 0.8s;
+}
+
+.next #plane {
+  position: absolute;
+  font-size: 19px;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.next:hover {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.nav-linksR {
+  outline: 0px;
+  transform: translateX(50rem);
+}
+
+.nav-linksR ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 15px;
+}
+
+.nav-linksR ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-linksR ul li:hover::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  margin: auto;
+  transition: 0.5s;
+}
+
+/* Mobile View */
+@media (max-width: 700px) {
+  .icon {
+    width: 50px;
+    height: auto;
+    transform: translate(-10px, 5px);
+  }
+  .title {
+    padding: 65px;
+    transform: translateX(-20px);
+  }
+  .title .f_name {
+    font-size: 25px;
+  }
+  .title .l_name {
+    font-size: 70%;
+  }
+  .text_box h1 {
+    font-size: 25px;
+    border-bottom: 2px solid #fff;
+  }
+  .text_box p {
+    font-size: 13px;
+  }
+  .btn {
+    font-size: 8;
+    padding: 6px 16px;
+  }
+  .nav-links ul li {
+    margin: 20%;
+    display: block;
+    padding: 0px 0px;
+  }
+  .nav-links {
+    position: fixed;
+    background: #f47236;
+    height: 100vh;
+    width: 150px;
+    top: 0;
+    right: -150px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  nav .nav-links .fa-solid {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  nav .fa-solid {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .events .row {
+    flex-direction: column;
+  }
+  .faculty_coordinators {
+    border-radius: 50%;
+    transform: translateX(-2.5rem);
+  }
+  .prof_name {
+    margin-top: 2%;
+  }
+  .co_ord {
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+    margin-left: 82px;
+    border-bottom: #f47236;
+    transform: translateX(8rem);
+  }
+  .icons-2 {
+    padding: 3%;
+  }
+  .cpr {
+    padding: 10px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .contact-col {
+    transform: translateX(rem);
+  }
+  .main {
+    margin: 0px;
+    padding: 0px;
+  }
+  .container {
+    height: 75vh;
+    margin: 0rem 7rem;
+  }
+  .container .title {
+    position: absolute;
+    top: 20%;
+  }
+  .container .form .user-details {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .container .form .user-details .input-box {
+    transform: translateX(-2rem);
+  }
+  .next {
+    width: 46%;
+    margin: 10px 2px;
+    padding: 10px 20px;
+    transform: translate(-2rem);
+  }
+}/*# sourceMappingURL=main.css.map */

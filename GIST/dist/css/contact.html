@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="GIST">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="icon" href="./photos/gist-icon2.jpg">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/466441c35c.js" crossorigin="anonymous"></script>
+        <title>gist-events</title>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <div class="nav-icon">
+                    <img class="icon" src="./photos/gist-icon.png">
+                </div>
+                <div class="title">
+                    <div class="f_name"><h1>Geethanjali
+                    </h1></div>
+                    <div class="l_name_c">institute of science & technology</div>
+                </div>
+                
+                <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" id="cross" onclick="hideMenu()"></i>
+                    <ul>
+                        <li data-aos="fade-left" data-aos-duration="1000"><a href="index.html">HOME</a></li>
+                        <li data-aos="fade-left" data-aos-duration="800"><a href="https://gist.edu.in/gist/about-gist/">ABOUT</a></li>
+                        <li data-aos="fade-left" data-aos-duration="600"><a href="index.html#events">EVENTS</a></li>
+                        <li data-aos="fade-left" data-aos-duration="400"><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars-staggered" id="bars" onclick="openMenu()"></i>
+            </nav>
+        <div class="text_box">
+            <h1 data-aos="fade-up"
+            data-aos-duration="1500">CONTACT US</h1>
+        </div>
+        </section>
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.944831811607!2d79.95261671415099!3d14.487856483715396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8d07a2eac001%3A0xede2397091e6b6f3!2sGeethanjali%20Institute%20of%20Science%20And%20Technology%2C%20Kovur!5e0!3m2!1sen!2sin!4v1658381453805!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <h5>gist.sh22@gmail.com</h5>
+                            <p>Email us your queries down below</p></span>
+                    </div>
+                </div>
+                
+                </div>
+                <div class="contact-col">
+                    <form action="https://formspree.io/f/xvoleqpd" onsubmit="sendmail()" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" id="email"placeholder="Enter your Gmail address" required>
+                        <input type="tel" name="number" id="number" placeholder="Enter your phone number">
+                        <textarea rows="8" name="message" id="message" placeholder="Message"></textarea>
+                        <button class="button" type="submit" >
+                                <span>SEND</span>
+                                <i class="fa fa-paper-plane fa-lg replace"></i>
+                        </button>
+                    </form>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="title_name">
+                <h3>Technical Coordinates</h3>
+            </div>
+            <div class="names">
+                <div class="n1"><h4>lorem ipsum </h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            </div>
+                <div class="n2"><h4>lorem ipsum </h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            </div>
+            </div>
+            <div class="icons-2">
+                <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;
+                <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <p class="cpr"> &copy;2022GIST &nbsp;&nbsp;_Made with <i class="fa-solid fa-heart"></i> by 1st_CSM</p>
+            
+    </section>
+
+        <script>
+            let navLinks = document.getElementById("navLinks");
+
+            function openMenu(){
+                navLinks.style.right = "0px";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-150px"
+            }
+        </script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+        </script>
+
+        <script>
+            AOS.init();
+          </script>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendmail(){
+                Email.send({
+                Host : "smtp.yourisp.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+                message => alert(message)
+                );
+            }
+        </script>
+
+    </body>
+</html>

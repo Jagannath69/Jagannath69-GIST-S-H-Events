@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="GIST">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="icon" href="./photos/gist-icon2.jpg">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/466441c35c.js" crossorigin="anonymous"></script>
+        <title>gist-events</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="nav-icon">
+                    <img class="icon" src="./photos/gist-icon.png">
+                </div>
+                <div class="title">
+                    <div class="f_name"><h1>Geethanjali
+                    </h1></div>
+                    <div class="l_name"><p>institute of science & technology</p></div>
+                </div>
+                <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" id="cross" onclick="hideMenu()"></i>
+                    <ul>
+                        <li data-aos="fade-left" data-aos-duration="1000"><a href="index.html">HOME</a></li>
+                        <li data-aos="fade-left" data-aos-duration="800"><a href="#events">EVENTS</a></li>
+                        <li data-aos="fade-left" data-aos-duration="600"><a href="register.html">REGISTER</a></li>
+                        <li data-aos="fade-left" data-aos-duration="400"><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars-staggered" id="bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="text_box">
+                <h1>Origins Of New Horizons</h1>
+                <p>Ushodaya Educational Society, with decades of experience and expertise in running educational Institutes established Geethanjali Institute of Science and Technology in order to provide quality Engineering and Technical Education to the rural and underprivileged lot on par with the creamy layer of society. GIST envisages comprehensive development of the students and offers qualitative, enduring, enriching, educational experience making it a dynamic hub of academic excellence, vibrant with inventive and innovative practices and teaching-learning strategies.</p>
+                <a data-aos="fade-up"  data-aos-duration="1000" class="btn" href="https://gist.edu.in/gist/about-gist/">Visit Us To Know More</a>
+            </div>
+        </section>
+        <section class="events" id="events" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Events</h1>
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                <div onclick="quiz()" class="event-col">
+                    <h3>Quiz</h3>
+                    <p> A form of game or mind sport in which players attempt to answer questions correctly about a certain or variety of subjects. Quizzes can be used as a brief assessment in education and similar fields to measure growth in knowledge, abilities, or skills.</p>
+                </div>
+                <div class="event-col">
+                    <h3>PPT</h3>
+                    <p>"The success of your presentation will be judged not by the knowledge you send but by what the listener receives." - Lilly Walters<br><br>"If you think presentations cannot enchant people, then you have never seen a really good one."<br> - Guy Kawaski</p>
+                </div>
+                <div class="event-col">
+                    <h3>Project Expo</h3>
+                    <p>The Objective of Project Expo is to showcase talents, innovativeness, creativity of all students. It is a platform to promote multidisciplinary research among all students.This provides opportunity for the students to demonstrate their learning experience.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h1 data-aos="fade-right" data-aos-delay="100">Enroll For Our Various Events</h1>
+            <a data-aos="fade-left" data-aos-delay="200" class="btn" href="register.html">REGISTER</a>
+        </section>
+        
+        <h2 class="co_ord">Faculty_coordinator</h2>
+        <br><br>
+        <div class="faculty_coordinators">
+        </div>
+        <div class="prof_name">
+            <h4 data-aos="zoom-in">Dr.P.M.Kishore</h4>
+            <p>HOD of Science & Humanities</p>
+            <p>(faculty coordinator)</p>
+        </div>
+        <br><br>
+        <section id="footer">
+                <div class="title_name">
+                    <h3>Technical Coordinates</h3>
+                </div>
+                <div class="names">
+                    <div class="n1"><h4>lorem ipsum </h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+                    <div class="n2"><h4>lorem ipsum </h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+                </div>
+                <div class="icons-2">
+                    <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;
+                    <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+                    <i class="fa-brands fa-youtube"></i></i>
+                </div>
+                <p class="cpr"> &copy;2022GIST &nbsp;&nbsp;_Made with <i class="fa-solid fa-heart"></i> by 1st_CSM</p>
+                
+        </section>
+
+        <script>
+            let navLinks = document.getElementById("navLinks");
+
+            function openMenu(){
+                navLinks.style.right = "0px";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-150px"
+            }
+        </script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+        </script>
+
+        <script>
+            AOS.init();
+          </script>
+
+          <script>
+            function quiz(){
+                location.href="eventQ.html";
+            };
+          </script>
+
+    </body>
+</html>

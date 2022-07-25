@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="GIST">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="icon" href="./photos/gist-icon2.jpg">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/466441c35c.js" crossorigin="anonymous"></script>
+        <title>gist-events-reg</title>
+    </head>
+    <body class="main">
+        <section>
+            <nav>   
+                <div class="nav-linksR" id="navLinksR">
+                <!--<i class="fa-solid fa-xmark" id="cross" onclick="hideMenu()"></i>-->
+                    <ul>
+                        <li data-aos="fade-left" data-aos-duration="1000"><a href="index.html">HOME</a></li>
+                        <li data-aos="fade-left" data-aos-duration="800"><a href="index.html#events">EVENTS</a></li>
+                        <li data-aos="fade-left" data-aos-duration="600"><a href="register.html">REGISTER</a></li>
+                        <li data-aos="fade-left" data-aos-duration="400"><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!--<i class="fa-solid fa-bars-staggered" id="bars" onclick="openMenu()"></i>-->
+            </nav>
+        </section>
+        <div class="container">
+                <div class="title">Registration</div>
+                <div class="form">
+                    <form action="#">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Full Name</span>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Email <address></address></span>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Your contact </span>
+                                <input type="text" placeholder="Phone Number">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Select Event</span>
+                                <select id="events-select" required>
+                                    <option class="value" value="quiz">Quiz</option>
+                                    <option class="value" value="PPT">PPT</option>
+                                    <option class="value" value="Project Expo">Project Expo</option>
+                                </select>
+                            </div>
+                            <button class="next" type="submit" >
+                                <span>Next</span>
+                                <i id="plane" class="fa fa-paper-plane fa-lg replace"></i>
+                            </button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+        <!--<script>
+            let navLinks = document.getElementById("navLinks");
+
+            function openMenu(){
+                navLinksR.style.right = "0px";
+            }
+            function hideMenu(){
+                navLinksR.style.right = "-150px"
+            }
+        </script>-->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+        </script>
+
+        <script>
+            AOS.init();
+          </script>
+    </body>
+</html>
